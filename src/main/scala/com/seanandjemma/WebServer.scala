@@ -9,7 +9,7 @@ import org.eclipse.jetty.server.handler.HandlerList
 
 object WebServer extends App {
 
-  val jettyServer = new Server(8080)
+  val jettyServer = new Server(args(1).toInt)
 
   val htmlHandler = new ResourceHandler()
   htmlHandler.setResourceBase(args(0))
