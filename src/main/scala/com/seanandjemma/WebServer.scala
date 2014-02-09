@@ -21,7 +21,7 @@ object WebServer extends App {
   val sprayContext = new ServletContextHandler()
   sprayContext.addEventListener(new Initializer())
   val sprayServletHandler = new ServletHandler()
-  sprayServletHandler.addServletWithMapping(classOf[Servlet30ConnectorServlet], "/rsvp")
+  sprayServletHandler.addServletWithMapping(classOf[Servlet30ConnectorServlet], "/rsvp/*")
   sprayContext.setHandler(sprayServletHandler)
 
   val handlers = new HandlerList()
