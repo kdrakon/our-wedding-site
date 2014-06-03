@@ -102,3 +102,9 @@ nav > a:hover {
 	border-width: 1px;
 	font-size: large;
 }
+
+.rsvpform {
+	width: 100%;
+	overflow: visible;
+	height: 35em;
+}
