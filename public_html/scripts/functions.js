@@ -3,7 +3,7 @@ function getDaysToDate(date, elementId){
 	var today = new Date();
 	var diff = Math.abs(date - today);
 	var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-	if (!isNaN(days)){	
+	if (!isNaN(days) || days > 0){	
 		document.getElementById(elementId).innerHTML = " (" + days + " days left!)";
 	}
 }
