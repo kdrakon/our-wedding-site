@@ -47,6 +47,7 @@ section {
 	margin: auto;
 	width: 52em;
 	top: -1em;
+	z-index: 10;
 }
 
 nav {
